@@ -12,20 +12,20 @@ void main()
 	printf("原数组\n");
 	for (int i = 0; i < 30; i++)
 	{
-		printf("%2d ", x[i]);
+		printf("%3d", x[i]);
 	}
 	
 	
-	int y[26];
+	int y[6];
 	int m = 0;
-	for (int k = 0; k < 26; k++,m++)
+	for (int k = 0; k < 6; k++,m+=5)
 	{
 		y[k] =average(&x[m]);
 	}
 	printf("\n平均数为\n");
-	for (int i = 0; i < 26; i++)
+	for (int i = 0; i < 6; i++)
 	{
-		printf("%2d ", y[i]);
+		printf("%15d", y[i]);
 	}
 }
 int average(int * beg)
