@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<math.h>
-#define SIZE 10
+#define SIZE 11
 float average(float *start_, float *end_);
 void main()
 {
